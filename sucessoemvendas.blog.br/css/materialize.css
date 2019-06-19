@@ -1,0 +1,29 @@
+header{
+  background-image: url();
+  
+  height:300px;
+
+}
+
+
+.menu{
+  background: transparent;
+  box-shadow: none;
+}
+.brand-logo{
+   
+}
+
+@media screen and (min-width: 960px){
+  header{
+    height:600px;
+    }
+    .brand-logo{
+      margin-left: 20px;
+  }
+  .desktop{
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+}
