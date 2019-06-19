@@ -1,16 +1,18 @@
 var usersList = document.getElementById('usersList');
 var nameInput = document.getElementById('nameInput');
+var lastInput = document.getElementById('lastInput');
 var emailInput = document.getElementById('emailInput');
 var addButton = document.getElementById('addButton');
 
 //Ao clicar no botão 
 addButton.addEventListener('click', function(){
-    create(nameInput.value, emailInput.value);
+    create(nameInput.value,lastInput.value, emailInput.value);
 });
 
-function create(name, email){
+function create(name,lastname, email){
     var data = {
         name:name,
+        lastname:lastname,
         email:email,
     };
     return firebase.database().ref().child('users').push(data);
@@ -20,7 +22,7 @@ firebase.database().ref('users').on('value', function(snapshot){
     usersList.innerHTML='';
     snapshot.forEach(function(item){
         var li = document.createElement('li');
-        li.appendChild(document.createTextNode(item.val().name + ':' + item.val().email));
+        li.appendChild(document.createTextNode(item.val().name + ':' + item.val().email  + item.val().lastInput));
         usersList.appendChild(li);
     });
         
