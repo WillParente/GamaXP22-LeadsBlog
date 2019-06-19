@@ -38,3 +38,7 @@ main{
     box-shadow: 0 1px 0 0 #000;
   }
 }
+  .title{
+    font-size: : 14px;
+    text-align: center;
+  }
