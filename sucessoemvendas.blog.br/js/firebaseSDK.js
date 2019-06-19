@@ -1,4 +1,4 @@
-<!-- The core Firebase JS SDK is always required and must be listed first -->
+/*<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -18,3 +18,15 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+*/
+
+var firebase = require("firebase-admin");
+
+var serviceAccount = require("../json/pixel-leads-db.json");
+
+firebase.initializeApp({
+  credential: firebase.credential.cert(serviceAccount),
+  databaseURL: "https://pixel-leads-db.firebaseio.com"
+});
+
+module.exports = firebase;
