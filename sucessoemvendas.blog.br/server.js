@@ -3,10 +3,10 @@ const bodyParser = require('body-parser');
 const Lead = require('./js/lead.js')
 const app = express();
 
+app.use( bodyParser.json() );
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/'));
 
-// Métodos do express
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
@@ -14,12 +14,15 @@ app.get('/', (req, res) => {
 app.post('/leads', (req, res) => {
     const name = req.body.lead.name.trim();
     const email = req.body.lead.email.trim();
-    const ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress ||req.socket.remoteAddress ||
-     (req.connection.socket ? req.connection.socket.remoteAddress : null);
-    const date_hour = localTime(new Date());
+    const ip = req.headers['x-forwarded-for']
+	|| req.connection.remoteAddress
+	||req.socket.remoteAddress ||
+	 (req.connection.socket ? req.connection.socket.remoteAddress : null);
+	const ipAddress = ip.substring(7, ip.length);
+	const date_hour = localTime(new Date());
     const leadType = emailType(email);
     const lead = Lead.create({ name, email, ipAddress, date_hour, leadType });
-    res.send(name + " - " + email + " - " + ipAddress + " - " + date_hour + " - " + leadType);
+    res.send("Obrigado");
 });
 
 app.get('/leads.csv', (req, res) => {
@@ -34,12 +37,21 @@ app.listen(3000);
 
 //Métodos para tratamento dos dados
 
+// Hora local
 var localTime = (d) => {
     //var formatedDate = d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
     var date = new Date(d.valueOf() - d.getTimezoneOffset() * 60000);
 	var formatedDate = date.toISOString().replace(/\.\d{3}Z$/, '').replace('T', ' ');
     return formatedDate;
 };
+
+/*var getIpAddress = () => {
+	var ip = req.headers['x-forwarded-for']
+	|| req.connection.remoteAddress
+	||req.socket.remoteAddress ||
+	 (req.connection.socket ? req.connection.socket.remoteAddress : null);
+	return ip.substring(7, ip.length);
+}*/
 
 // Classificação do e-mail em B2C OU B2B
 var emailType = (email) => {
