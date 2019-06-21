@@ -1,13 +1,5 @@
-header{
-    background-image: url();
-    height:300px;
- }
-  .menu{
-    background: white;
-    box-shadow: none;
-  }
-  .brand-logo{
-  }
+
+ 
 
 @media screen and (min-width: 960px){
 header{
