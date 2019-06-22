@@ -1,191 +1,277 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Sucesso em Vendas - 9 Técnicas para Alavancar suas Vendas com o Uso de CRM</title>
+    <title>9 técnicas para alavancar suas vendas com o uso de CRM</title>
+    <meta name="author" content="Sucesso em Vendas">
+    <meta name="description" content="Com o blog Sucesso em Vendas você aprende quais são as técnicas mais utilizadas para aumentar suas vendas usando um CRM. Confira!">
+    <meta name="keywords" content="">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/real-time-database.js"></script>
-
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!-- Estilo.css utilizado no projeto -->
+	  <link href="css/style.css" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<header>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
     <nav class="menu">
-        <div class="nav-wrapper container">
-            <a href="#!" class="brand-logo">Sucesso em Vendas</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons "
-                    style="color:grey;">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html"><span class="white-text ">HOME</span></a></li>
-                <li><a href="badges.html"><span class="white-text ">Vendas</span></a></li>
-                <li><a href="collapsible.html"><span class="white-text ">Négocios</span></a></li>
-                <li><a href="sass.html"><i class="material-icons" style="color: white;">search</i></a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="sass.html"><span class="grey-text ">Investimentos</span></a></li>
-                <li><a href="badges.html"><span class="grey-text text-darken-2">Vendas</span></a></li>
-                <li><a href="collapsible.html"><span class="grey-text text-darken-2">Negócios</span></a></li>
-                <li><a href="mobile.html"></a></li>
-            </ul>
+        <div class="nav-wrapper ">
+          <a href="index.html" class="brand-logo"><img src="imagens/logo.png"></a>
+          <a href="index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://www.instagram.com/sucessoemvendas.blog/"><img src="imagens/instagram.png"></a></li>
+            <li><a href="https://www.facebook.com/sucessoemvendas.blog"><img src="imagens/facebook.png"></a></li>
+            <li><a href="https://www.linkedin.com/company/sucessoemvenda/"><img src="imagens/linkedin.png"></a></li>
+          </ul>
         </div>
-    </nav>
-    </nav>
+      </nav>
+      <div class="banner">
+        <img src="imagens/card1.jpg">
+      </div>
+      <br>
+      <div class="container">
+        <div class="page-header"><h1> 9 técnicas para alavancar suas vendas com o uso de CRM</h1> </div>
+          <div class="row">
+            <div class="col s12">
+              <p class="text-justify">Quais são as técnicas mais utilizadas para aumentar suas vendas usando um CRM? Veja a seguir o que essa 
+                poderosa ferramenta pode lhe ajudar a fazer.</p>
+              <p class="text-justify">Sua equipe de vendas provavelmente usa algumas técnicas comprovadas para gerar leads, acompanhar os 
+                prospects, realizar cold calls, segmentar públicos-alvo, reunir informações de clientes e maximizar 
+                e-mails, entre outras tarefas de vendas.</p>
+              <p class="text-justify">Talvez você esteja atingindo alvos de vendas, talvez não. A jornada de vendas não é feita apenas de 
+                acertos, haverá sucessos e erros. É um processo de construção contínua de sua perspectiva de conversão 
+                e venda.</p>
+              <p class="text-justify">No processo de vendas, você será melhor guiado e auxiliado pelos procedimentos e práticas oferecidas 
+                em uma ferramenta de CRM,  conseguindo aumentar mais a conversão do seu time de vendas.</p>
+              <p class="text-justify">O CRM é a principal ferramenta de suas equipes de vendas, sua efetividade e benefícios são 
+                estatisticamente comprovados: ao usar um CRM é possível aumentar as vendas em 28% e a produtividade 
+                de vendas em até 34%. Mas você sabe que muitos profissionais de vendas ainda estão atolados em desafios 
+                e problemas relacionados ao CRM?</p>
+              <p class="text-justify">Embora a grande maioria das empresas com 10 ou mais funcionários use um sistema de CRM, a realidade é 
+                que, entre os vendedores, 22% não sabem o que é um CRM.</p>
+              <p class="text-justify">Certamente, aqueles que conhecem seu CRM estão cientes de que ele possui recursos inteligentes e de 
+                automação que eliminam a entrada manual de dados demorada, bem como as planilhas tradicionais para 
+                armazenar dados de leads e clientes. Essas são apenas a ponta do que o software de CRM pode fazer, 
+                há muito mais benefícios que você pode colher usando esses programas.</p>
+              <p class="text-justify">Neste guia de CRM, analisaremos algumas das técnicas de CRM conhecidas que podem ser otimizadas por 
+                suas equipes de vendas, usando como referência os recursos comuns do software de CRM. Dessa forma, 
+                sua força de vendas pode maximizar fluxos de trabalho, processos e atividades com base nos recursos 
+                prontos para uso de um aplicativo CRM de qualidade.</p>
 
-</header>
-<body>
-<h1 id="size">
-    9 técnicas para alavancar suas vendas com o uso de CRM</h1>
-<br><br>
+              <h5>1. Saiba tudo sobre quem é o seu potencial cliente</h5>
+              <p class="text-justify">Os colaboradores do time de vendas definitivamente devem ter uma ideia sobre 
+                seu público-alvo. O que eles lutam é para obter informações que o levem ao fechamento da venda 
+                rapidamente. O primeiro passo no processo de venda é a prospecção. Essa etapa inicial é um grande 
+                desafio para os representantes de vendas.</p>
+              <p class="text-justify">A pesquisa de um prospect é melhor facilitada com a ajuda do conhecimento e 
+                gerenciamento de leads. E aqui a tecnologia é uma grande ajuda: um bom software de CRM de vendas 
+                informa tudo o que você precisa saber sobre seu prospect, a partir de uma única tela.</p>
+              <p class="text-justify">Você pode ter detalhes completos sobre o seu lead a partir de suas conversas 
+                e pontos de contato com sua empresa, sua interação com seu produto e seu website, os compromissos 
+                e acompanhamentos com eles e os negócios que podem ser abertos, vencidos ou perdidos. Como esta 
+                técnica é útil? Considere, por exemplo, um caso em que os dados mostram que um visitante está 
+                passando regularmente pelo seu site, procurando produtos, comentando positivamente em sua página 
+                de mídia social e até ligando para sua empresa algumas vezes. Se você não tivesse um CRM que 
+                coletasse e registrasse toda a interação desse visitante em particular com sua empresa, nunca 
+                teria sabido do interesse da pessoa e teria perdido uma portunidade de realizar um possível cliente.</p>
+              <p class="text-justify">Se você ainda não conseguiu um bom CRM para começar a explorar os insights 
+                do seu banco de dados de clientes, comece buscando um já.  Entre as principais soluções disponíveis, 
+                o Pipesales é um dos mais fáceis de aprender e configurar, além de ter um poderoso gerenciamento de leads. 
+              <p class="text-justify">É portanto, uma plataforma recomendada para novos usuários e empresas de rápido 
+                crescimento para obter essa visão de cliente de 360 graus. Você pode facilmente se inscrever para uma avaliação
+                gratuita do Pipesales  aqui para conhecer mais de seus recursos em primeira mão.</p>
 
-<p>
-     </p>
+              <h5>2. Acompanhe a jornada de compra de seus clientes</h5>
+              <p class="text-justify">Informação é tudo. E para fechar negócios, sua equipe de vendas precisa de 
+                insights detalhados das interações com o cliente e engajamento de canais específicos, como e-mails, 
+                websites, chamadas e atividades. Isso deve ser rastreado, monitorado e extraído para obter 
+                informações, visando sempre saber o máximo sobre seu prospect.</p>
+              <p class="text-justify">Sua equipe poderá obter uma visualização cronológica do envolvimento de um 
+                contato em vários canais, permitindo que você segmente seu comportamento por tipo de atividade e 
+                determine suas preferências,  estabelecendo assim o melhor relacionamento com o prospect.</p>
+              <p class="text-justify">Uma solução de CRM como a Pipesales não apenas acompanhará os engajamentos 
+                de seus leads, mas também os classificará de acordo com o comportamento com sua ferramenta avançada 
+                de pontuação, praticamente transformando seu CRM em um relatório de leads. Por exemplo, quando alguém
+                fica em seu site mais tempo do que o normal, você pode pontuar essa pessoa com base nas páginas 
+                visualizadas, nas ofertas que foram clicadas ou em qualquer outra atividade e interação realizada. 
+                Ele permite que você avalie se a pessoa é uma pessoa que precisa ser seguida.</p>
 
+              <h5>3. Gerencie seus negócios visualmente</h5>
+              <p class="text-justify">Gerenciar seus negócios em vários estágios pode ser uma grande dor de 
+                cabeça para você e sua equipe. E não ter ideia de onde estão os negócios no processo de vendas, 
+                quantos são e quanto valem podem levar a oportunidades perdidas e afetar seus resultados.</p>
+              <p class="text-justify"></p>Um sistema de CRM fornecerá recursos de gerenciamento de transações 
+                principalmente por meio de um pipeline visual de vendas. Esse é um recurso padrão no Pipesales e, 
+                na verdade, na maioria das principais soluções de software de CRM. Isso mostrará a saúde de seus 
+                negócios à medida que eles se movimentam pelos diferentes estágios.</p>
+              <p class="text-justify">Sua equipe de vendas poderá visualizar de forma completa e rápida, 
+                quantos contratos estão em cada estágio, classificando-os por sua data de fechamento esperada 
+                e tomando decisões inteligentes para aumentar os negócios na escada de vendas.</p>
+              <p class="text-justify">Você poderá otimizar o gerenciamento de ofertas e acelerar a geração de 
+                receita com uma visualização de funil em seu canal de vendas, identificando transações que você 
+                pode fechar mais rapidamente e ter uma ideia de quanto de vendas você poderá fechar no próximo mês.</p>
+              <p class="text-justify">Uma boa maneira de aprimorar essa técnica é definir regras ou classificar 
+                suas ofertas no funil de vendas, que podem seguir o padrão que você quiser definir como localização, 
+                setor, cargo. Por exemplo, se um prospect  é o founder de uma startup, é possível atribuir uma 
+                classificação ou pontuação mais alta na pessoa e dar prioridade - alocando seu melhor representante 
+                de vendas e recursos a essa pessoa.</p>
 
-       <h5> 9 técnicas para alavancar suas vendas com o uso de CRM</h5><br>
-     Quais são as técnicas mais utilizadas para aumentar suas vendas usando um CRM? Veja a seguir o que essa poderosa ferramenta pode lhe ajudar a fazer.
-     Sua equipe de vendas provavelmente usa algumas técnicas comprovadas para gerar leads, acompanhar os prospects, realizar cold calls, segmentar públicos-alvo, reunir informações de clientes e maximizar e-mails, entre outras tarefas de vendas.
-     Talvez você esteja atingindo alvos de vendas, talvez não. A jornada de vendas não é feita apenas de acertos, haverá sucessos e erros. É um processo de construção contínua de sua perspectiva de conversão e venda.
-     No processo de vendas, você será melhor guiado e auxiliado pelos procedimentos e práticas oferecidas em uma ferramenta de CRM,  conseguindo aumentar mais a conversão do seu time de vendas.
-     O CRM é a principal ferramenta de suas equipes de vendas, sua efetividade e benefícios são estatisticamente comprovados: ao usar um CRM é possível aumentar as vendas em 28% e a produtividade de vendas em até 34%. Mas você sabe que muitos profissionais de vendas ainda estão atolados em desafios e problemas relacionados ao CRM?
-     Embora a grande maioria das empresas com 10 ou mais funcionários use um sistema de CRM, a realidade é que, entre os vendedores, 22% não sabem o que é um CRM.
-     Certamente, aqueles que conhecem seu CRM estão cientes de que ele possui recursos inteligentes e de automação que eliminam a entrada manual de dados demorada, bem como as planilhas tradicionais para armazenar dados de leads e clientes. Essas são apenas a ponta do que o software de CRM pode fazer, há muito mais benefícios que você pode colher usando esses programas.
-     Neste guia de CRM, analisaremos algumas das técnicas de CRM conhecidas que podem ser otimizadas por suas equipes de vendas, usando como referência os recursos comuns do software de CRM. Dessa forma, sua força de vendas pode maximizar fluxos de trabalho, processos e atividades com base nos recursos prontos para uso de um aplicativo CRM de qualidade.<br>
+              <h5>4. Rastreie e gerencie seus e-mails em um único lugar</h5>
 
-     <h5>1. Saiba tudo sobre quem é o seu potencial cliente</h5><br>
-     Os colaboradores do time de vendas definitivamente devem ter uma ideia sobre seu público-alvo. O que eles lutam é para obter informações que o levem ao fechamento da venda rapidamente. O primeiro passo no processo de venda é a prospecção. Essa etapa inicial é um grande desafio para os representantes de vendas.
-     A pesquisa de um prospect é melhor facilitada com a ajuda do conhecimento e gerenciamento de leads. E aqui a tecnologia é uma grande ajuda: um bom software de CRM de vendas informa tudo o que você precisa saber sobre seu prospect, a partir de uma única tela.
-     Você pode ter detalhes completos sobre o seu lead a partir de suas conversas e pontos de contato com sua empresa, sua interação com seu produto e seu website, os compromissos e acompanhamentos com eles e os negócios que podem ser abertos, vencidos ou perdidos. Como esta técnica é útil? Considere, por exemplo, um caso em que os dados mostram que um visitante está passando regularmente pelo seu site, procurando produtos, comentando positivamente em sua página de mídia social e até ligando para sua empresa algumas vezes. Se você não tivesse um CRM que coletasse e registrasse toda a interação desse visitante em particular com sua empresa, nunca teria sabido do interesse da pessoa e teria perdido uma oportunidade de realizar um possível cliente.
-     Se você ainda não conseguiu um bom CRM para começar a explorar os insights do seu banco de dados de clientes, comece buscando um já.  Entre as principais soluções disponíveis, o Pipesales é um dos mais fáceis de aprender e configurar, além de ter um poderoso gerenciamento de leads. É portanto, uma plataforma recomendada para novos usuários e empresas de rápido crescimento para obter essa visão de cliente de 360 graus. Você pode facilmente se inscrever para uma avaliação gratuita do Pipesales  aqui para conhecer mais de seus recursos em primeira mão.<br>
+              <p class="text-justify">E-mail é amplamente considerado um canal eficaz em termos de geração de 
+                receita e está entre as principais fontes de informação para o público B2B. Mas todos concordam, 
+                incluindo equipes de marketing e vendas, que o gerenciamento de e-mails pode ser uma grande bagunça. 
+                Você precisa de ferramentas para colocar ordem no caos de sua caixa de correio.</p>
+              <p class="text-justify">O CRM traz consigo a integração de e-mail para que você possa enviar, 
+                rastrear e gerenciar seu e-mail a partir de seu CRM de vendas. Usando os recursos do Pipesales 
+                como critério, você poderá acompanhar e saber quem abriu seus e-mails mais recentes, quando e 
+                quem clicou nos seus links!</p>
+              <p class="text-justify">Suas campanhas de vendas por e-mail serão simplificadas e aceleradas, 
+                permitindo que você alcance sua lista de e-mails rapidamente e, convenientemente, envie e-mails 
+                em escala personalizados.</p>
+              <p class="text-justify">Sua equipe também obtém métricas perspicazes de e-mail, permitindo que eles 
+                meçam os resultados da campanha de e-mail e saibam as taxas de abertura e cliques, bem como quais 
+                modelos apresentam um bom desempenho e obtêm a melhor resposta.</p>
+              <p class="text-justify">A Pipesales também oferece uma caixa de entrada que arquiva todos os e-mails 
+                enviados para cada prospect, o que auxilia na administração de assuntos, especialmente em situações 
+                em que você lida com vários clientes em potencial.</p>
+              <p class="text-justify">Você e sua equipe também têm uma caixa de entrada para obter mais 
+                visibilidade, melhor colaboração e tempos de resposta mais curtos, o que garante que nenhuma 
+                transação seja perdida. Você também terá recursos para agendar e-mails, sincronizá-los com 
+                sua agenda, vincular automaticamente e-mails a um lead ou registro de contato apropriado e 
+                receber alertas em tempo real sobre as aberturas de e-mail, cliques de links e novos e-mails.</p>
 
-     <h5>2. Acompanhe a jornada de compra de seus clientes</h5>
-     Informação é tudo. E para fechar negócios, sua equipe de vendas precisa de insights detalhados das interações com o cliente e engajamento de canais específicos, como e-mails, websites, chamadas e atividades. Isso deve ser rastreado, monitorado e extraído para obter informações, visando sempre saber o máximo sobre seu prospect.
-     Sua equipe poderá obter uma visualização cronológica do envolvimento de um contato em vários canais, permitindo que você segmente seu comportamento por tipo de atividade e determine suas preferências,  estabelecendo assim o melhor relacionamento com o prospect.
-     Uma solução de CRM como a Pipesales não apenas acompanhará os engajamentos de seus leads, mas também os classificará de acordo com o comportamento com sua ferramenta avançada de pontuação, praticamente transformando seu CRM em um relatório de leads. Por exemplo, quando alguém fica em seu site mais tempo do que o normal, você pode pontuar essa pessoa com base nas páginas visualizadas, nas ofertas que foram clicadas ou em qualquer outra atividade e interação realizada. Ele permite que você avalie se a pessoa é uma pessoa que precisa ser seguida.
-     <br>
-     <h5>3. Gerencie seus negócios visualmente</h5>
-     <br>
-     Gerenciar seus negócios em vários estágios pode ser uma grande dor de cabeça para você e sua equipe. E não ter ideia de onde estão os negócios no processo de vendas, quantos são e quanto valem podem levar a oportunidades perdidas e afetar seus resultados.
-     Um sistema de CRM fornecerá recursos de gerenciamento de transações principalmente por meio de um pipeline visual de vendas. Esse é um recurso padrão no Pipesales e, na verdade, na maioria das principais soluções de software de CRM. Isso mostrará a saúde de seus negócios à medida que eles se movimentam pelos diferentes estágios.
-     Sua equipe de vendas poderá visualizar de forma completa e rápida, quantos contratos estão em cada estágio, classificando-os por sua data de fechamento esperada e tomando decisões inteligentes para aumentar os negócios na escada de vendas.
-     Você poderá otimizar o gerenciamento de ofertas e acelerar a geração de receita com uma visualização de funil em seu canal de vendas, identificando transações que você pode fechar mais rapidamente e ter uma ideia de quanto de vendas você poderá fechar no próximo mês.
-     Uma boa maneira de aprimorar essa técnica é definir regras ou classificar suas ofertas no funil de vendas, que podem seguir o padrão que você quiser definir como localização, setor, cargo. Por exemplo, se um prospect  é o founder de uma startup, é possível atribuir uma classificação ou pontuação mais alta na pessoa e dar prioridade - alocando seu melhor representante de vendas e recursos a essa pessoa.
-     <br>
-     <h5>4. Rastreie e gerencie seus e-mails em um único lugar</h5>
-    <br>
+              <h5>5. Saiba os detalhes de sua performance de vendas</h5>
 
-     E-mail é amplamente considerado um canal eficaz em termos de geração de receita e está entre as principais fontes de informação para o público B2B. Mas todos concordam, incluindo equipes de marketing e vendas, que o gerenciamento de e-mails pode ser uma grande bagunça. Você precisa de ferramentas para colocar ordem no caos de sua caixa de correio.
-     O CRM traz consigo a integração de e-mail para que você possa enviar, rastrear e gerenciar seu e-mail a partir de seu CRM de vendas. Usando os recursos do Pipesales como critério, você poderá acompanhar e saber quem abriu seus e-mails mais recentes, quando e quem clicou nos seus links!
-     Suas campanhas de vendas por e-mail serão simplificadas e aceleradas, permitindo que você alcance sua lista de e-mails rapidamente e, convenientemente, envie e-mails em escala personalizados.
-     Sua equipe também obtém métricas perspicazes de e-mail, permitindo que eles meçam os resultados da campanha de e-mail e saibam as taxas de abertura e cliques, bem como quais modelos apresentam um bom desempenho e obtêm a melhor resposta.
-     A Pipesales também oferece uma caixa de entrada que arquiva todos os e-mails enviados para cada prospect, o que auxilia na administração de assuntos, especialmente em situações em que você lida com vários clientes em potencial.
-     Você e sua equipe também têm uma caixa de entrada para obter mais visibilidade, melhor colaboração e tempos de resposta mais curtos, o que garante que nenhuma transação seja perdida. Você também terá recursos para agendar e-mails, sincronizá-los com sua agenda, vincular automaticamente e-mails a um lead ou registro de contato apropriado e receber alertas em tempo real sobre as aberturas de e-mail, cliques de links e novos e-mails.
-     <br>
-     <h5>5. Saiba os detalhes de sua performance de vendas</h5>
-     <br>
+              <p class="text-justify">Uma das funções mais importantes do CRM de vendas é sua capacidade de 
+                analisar seu desempenho e prever suas vendas. Você precisa saber o que está acontecendo, como 
+                as equipes de vendas estão se saindo e entender seus resultados. Para facilitar ainda mais, 
+                seu CRM pode ajudar você a criar uma previsão de vendas.</p>
+              <p class="text-justify">A equipe de vendas pode aproveitar a capacidade do software de CRM para 
+                visualizar relatórios de vendas por meio de tabelas e gráficos, sem codificação ou configurações 
+                complexas. Isso permite monitorar visualmente suas vendas e entender melhor os resultados e o 
+                desempenho.</p>
+              <p class="text-justify">O sistema CRM também pode extrair dados de receita e fazer análises para 
+                classificá-los por fontes, representante de vendas, local ou outros atributos para permitir que 
+                você identifique os principais funcionários, campanhas que funcionam, regionais líderes de vendas 
+                e assim por diante.</p>
+              <p class="text-justify">Você e sua equipe de vendas podem usar as principais métricas de desempenho 
+                em taxas de conversão, receita, ciclo de vendas, relatórios de velocidade e afins para ajustar as 
+                técnicas da equipe de vendas e orientá-lo nos próximos movimentos imediatos e nas estratégias de 
+                médio e longo prazo, além de criar relatórios que informam o tempo médio gasto por cada 
+                representante para fechar um negócio e até detalhar a média de cada representante para 
+                identificar a duração de uma transação por seus estágios individuais.</p>
 
-     Uma das funções mais importantes do CRM de vendas é sua capacidade de analisar seu desempenho e prever suas vendas. Você precisa saber o que está acontecendo, como as equipes de vendas estão se saindo e entender seus resultados. Para facilitar ainda mais, seu CRM pode ajudar você a criar uma previsão de vendas.
-     A equipe de vendas pode aproveitar a capacidade do software de CRM para visualizar relatórios de vendas por meio de tabelas e gráficos, sem codificação ou configurações complexas. Isso permite monitorar visualmente suas vendas e entender melhor os resultados e o desempenho.
-     O sistema CRM também pode extrair dados de receita e fazer análises para classificá-los por fontes, representante de vendas, local ou outros atributos para permitir que você identifique os principais funcionários, campanhas que funcionam, regionais líderes de vendas e assim por diante.
-     Você e sua equipe de vendas podem usar as principais métricas de desempenho em taxas de conversão, receita, ciclo de vendas, relatórios de velocidade e afins para ajustar as técnicas da equipe de vendas e orientá-lo nos próximos movimentos imediatos e nas estratégias de médio e longo prazo, além de criar relatórios que informam o tempo médio gasto por cada representante para fechar um negócio e até detalhar a média de cada representante para identificar a duração de uma transação por seus estágios individuais.
-    <br>
-     <h5>6. Crie uma automação para o fluxo de trabalho</h5>
-     <br>
+              <h5>6. Crie uma automação para o fluxo de trabalho</h5>
 
-     A automação impulsiona a produtividade e a eficiência, ajudando sua equipe de vendas a otimizar os processos e a realizar mais trabalhos. Qualquer tarefa repetitiva, como acompanhar leads, enviar e-mails, gerar faturas e muitas outras atividades diárias, pode ser automatizada por uma solução de CRM. Por exemplo, a Pipesales, com seu recurso de fluxo de trabalho inteligente, pode realizar todo o trabalho repetitivo para você com uma interface simples de apontar e clicar, o que permite configurar, automatizar e executar praticamente qualquer processo de vendas.
-     Você pode automatizar até mesmo os processos de negócios mais complexos, criando regras simples de status como “on going”, e assim que uma negociação for avançando, trocar para “done”.
-     Depois que um gatilho for detectado, uma ação de sua escolha é executada, como enviar um e-mail, atualizar um registro ou usar e-books para enviar notificações instantâneas para aplicativos conectados. As automações de fluxo de trabalho economizam drasticamente o tempo e o esforço de suas equipes de vendas, permitindo que elas fechem negócios com mais rapidez.
-    <br>
-     <h5>7. Use seu CRM em qualquer lugar</h5>
-     <br>
-     Os aplicativos móveis agora são quase um recurso padrão do software de CRM, oferecendo à sua equipe de vendas os meios para usar o CRM e acessar dados sobre clientes em potencial enquanto estiver em trânsito.
-     Você poderá administrar suas vendas do seu dispositivo móvel sem perder informação nem recurso, receber notificações quando um novo lead, oferta ou tarefa é atribuído a você, além de ser lembrado de compromissos futuros, entre outros.
-    <br>
+              <p class="text-justify">A automação impulsiona a produtividade e a eficiência, ajudando sua equipe 
+                de vendas a otimizar os processos e a realizar mais trabalhos. Qualquer tarefa repetitiva, como 
+                acompanhar leads, enviar e-mails, gerar faturas e muitas outras atividades diárias, pode ser 
+                automatizada por uma solução de CRM. Por exemplo, a Pipesales, com seu recurso de fluxo de 
+                trabalho inteligente, pode realizar todo o trabalho repetitivo para você com uma interface simples 
+                de apontar e clicar, o que permite configurar, automatizar e executar praticamente qualquer processo 
+                de vendas.</p>
+              <p class="text-justify">Você pode automatizar até mesmo os processos de negócios mais complexos, criando 
+                regras simples de status como “on going”, e assim que uma negociação for avançando, trocar para “done”.</p>
+              <p class="text-justify">Depois que um gatilho for detectado, uma ação de sua escolha é executada, como 
+                enviar um e-mail, atualizar um registro ou usar e-books para enviar notificações instantâneas para 
+                aplicativos conectados. As automações de fluxo de trabalho economizam drasticamente o tempo e o 
+                esforço de suas equipes de vendas, permitindo que elas fechem negócios com mais rapidez.</p>
 
-    <h5>8. Integre dados de outras ferramentas</h5>
-     Todo o potencial de um sistema CRM é realizado por meio de seus recursos de integração.
-     Um bom exemplo para essa técnica é quando você precisa simplificar o envio de e-mails em massa. Basta integrar o CRM a um software de automação de e-mail marketing como o RD Station e executar a tarefa dentro do sistema sem precisar abrir outro aplicativo de e-mail, transferir dados e enviar massagens por e-mail, importar sua lista de contatos e configurar a sequência e programação de entrega. O Pipesales é um CRM que integra uma série de ferramentas importantes como RD Station, Gmail, Zapier, Call tracker, Slack entre outros: tempo e recursos são otimizados com integração, aproveite!
-     <br>
+              <h5>7. Use seu CRM em qualquer lugar</h5>
 
-     <h5>9. Tenha tudo em um só lugar, de forma organizada!</h5>
-     Um sistema de CRM completo é fundamental para que você não tenha que trabalhar em diferentes ferramentas e soluções autônomas, que lhe custarão tempo, dinheiro e problemas de gerenciamento. Ser capaz de ver seus prospects e clientes de forma clara e completa, monitorar e acompanhar a jornada do cliente, agilizar e automatizar os processos de vendas e realizar várias ações em um só lugar são alguns dos recursos mais benéficos de um sistema CRM.
-     Sua equipe de vendas terá acesso a todo o conteúdo de forma clara e organizada, e será capaz de obter o máximo desempenho nas tarefas e atribuições. Encontrar algo - menus, recursos, opções, ferramentas e outros aplicativos - é altamente facilitado em um painel bem organizado onde cada item está a apenas um clique de distância.
-     Existem muitas soluções de CRM de vendas confiáveis como a Pipesales. O importante é ser capaz de aproveitar todos os recursos do software de CRM, ajudando você e sua empresa a aprimorar ainda mais as técnicas e práticas que você já implementou, além de construir novas estratégias.
-     Se você deseja avaliar os recursos do CRM e como eles podem ajudar sua equipe de vendas, inscreva-se aqui e faça um teste no Pipesales!
+              <p class="text-justify">Os aplicativos móveis agora são quase um recurso padrão do software de CRM, 
+                oferecendo à sua equipe de vendas os meios para usar o CRM e acessar dados sobre clientes em 
+                potencial enquanto estiver em trânsito.</p>
+              <p class="text-justify">Você poderá administrar suas vendas do seu dispositivo móvel sem perder 
+                informação nem recurso, receber notificações quando um novo lead, oferta ou tarefa é atribuído 
+                a você, além de ser lembrado de compromissos futuros, entre outros.</p>
 
-      <!--Import jQuery before materialize.js-->
+              <h5>8. Integre dados de outras ferramentas</h5>
+
+              <p class="text-justify">Todo o potencial de um sistema CRM é realizado por meio de seus recursos 
+                de integração.</p>
+              <p class="text-justify">Um bom exemplo para essa técnica é quando você precisa simplificar o envio 
+                de e-mails em massa. Basta integrar o CRM a um software de automação de e-mail marketing como o 
+                RD Station e executar a tarefa dentro do sistema sem precisar abrir outro aplicativo de e-mail, 
+                transferir dados e enviar massagens por e-mail, importar sua lista de contatos e configurar a 
+                sequência e programação de entrega. O Pipesales é um CRM que integra uma série de ferramentas 
+                importantes como RD Station, Gmail, Zapier, Call tracker, Slack entre outros: tempo e recursos 
+                são otimizados com integração, aproveite!</p>
+
+              <h5>9. Tenha tudo em um só lugar, de forma organizada!</h5>
+
+              <p class="text-justify">Um sistema de CRM completo é fundamental para que você não tenha que 
+                trabalhar em diferentes ferramentas e soluções autônomas, que lhe custarão tempo, dinheiro e 
+                problemas de gerenciamento. Ser capaz de ver seus prospects e clientes de forma clara e completa, 
+                monitorar e acompanhar a jornada do cliente, agilizar e automatizar os processos de vendas e 
+                realizar várias ações em um só lugar são alguns dos recursos mais benéficos de um sistema CRM.</p>
+              <p class="text-justify">Sua equipe de vendas terá acesso a todo o conteúdo de forma clara e organizada, 
+                e será capaz de obter o máximo desempenho nas tarefas e atribuições. Encontrar algo - menus, recursos, 
+                opções, ferramentas e outros aplicativos - é altamente facilitado em um painel bem organizado onde cada 
+                item está a apenas um clique de distância.</p>
+              <p class="text-justify">Existem muitas soluções de CRM de vendas confiáveis como a Pipesales. O importante
+                 é ser capaz de aproveitar todos os recursos do software de CRM, ajudando você e sua empresa a 
+                 aprimorar ainda mais as técnicas e práticas que você já implementou, além de construir novas estratégias.</p>
+              <p class="text-justify">Se você deseja avaliar os recursos do CRM e como eles podem ajudar sua equipe de 
+                vendas, inscreva-se aqui e faça um teste no Pipesales!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <footer class="page-footer white">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
+          <div class="row col l6 s12">
               <h4 class="grey-text">Fique por dentro!</h4>
+          </div>
+          <div class="row col l6 s12">
               <p class="grey-text ">Faça seu cadastro e receba noticias importantes.</p>
+          </div>
+          <form class="col s12" action="/leads" method="POST">
+            <div class="row">
+              <div class="input-field col s6 menu">
+                <input style="color:black;" name="lead[name]" placeholder="Digite seu nome" id="nameInput" type="text" class="validate">
+                <label for="first_name">Nome</label>
+              </div>
+              <div class="input-field col s6 menu">
+                <input style="color:black;" name="lead[lastName]" placeholder="Digite seu sobrenome" id="lastInput" type="text" class="validate">
+                <label for="last_name">Sobrenome</label>
+              </div>
             </div>
             <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6 menu">
-          <input placeholder="Digite o nome completo" id="nameInput" type="text" class="validate">
-          <label for="first_name">Nome</label>
+              <div class="input-field col s6 menu">
+                <input style="color:black;" name="lead[email]" id="emailInput" type="email" class="validate" placeholder="Digite seu email">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="brand-logo">
+                <button class="btn btn-large green"id=addButton>Adicionar</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="row">
-          <div class="input-field col s6 menu">
-            <input placeholder="Digite o nome completo" id="lastInput" type="text" class="validate">
-            <label for="last_name">Sobrenome</label>
-          </div>
-        <div class="input-field col s6 menu">
-          <input id="emailInput" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-          </div>
-        </div>
-        <div class="brand-logo">
-        <button class="btn btn-large green"id=addButton>Adicionar</button>
-      </div>
-      </div>
       </footer>
       <div class="footer-copyright">
-          <div class="container">
-         Sucesso em vendas  ©2019- Todos os direitos reservados
+        <div class="container">
+          Sucesso em vendas  ©2019- Todos os direitos reservados
           <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-          </div>
+        </div>
+      </div>
 
-
-
-        </script>
-        <script>
-  $(".button-collapse").sideNav();
-
-
-  </script>
-
-
-
-
-
-   </body>
-
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script>
+        $(".button-collapse").sideNav();
+      </script>
+  </body >
 </html>

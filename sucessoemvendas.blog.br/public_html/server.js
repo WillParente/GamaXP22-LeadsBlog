@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/leads', (req, res) => {
-    const name = req.body.lead.name.trim() + " "+ req.body.lead.lastName.trim();
+    const name = req.body.lead.name.trim() + " " + req.body.lead.lastName.trim();
 	const email = req.body.lead.email.trim();
     const ip = req.headers['x-forwarded-for']
 	|| req.connection.remoteAddress
@@ -27,7 +27,7 @@ app.post('/leads', (req, res) => {
 
 app.get('/leads.csv', (req, res) => {
     res.setHeader('Content-Type', 'text/csv');
-    res.setHeader('Content-Disposition', 'attachment; filename=\"' + 'meusleads.csv\"');
+    res.setHeader('Content-Disposition', 'attachment; filename=\"' + 'PixelLeads.csv\"');
     Lead.csv((data) => {
         res.send(data);
     });
@@ -36,10 +36,8 @@ app.get('/leads.csv', (req, res) => {
 app.listen(3000);
 
 //Métodos para tratamento dos dados
-
 // Hora local
 var localTime = (d) => {
-    //var formatedDate = d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
     var date = new Date(d.valueOf() - d.getTimezoneOffset() * 60000);
 	var formatedDate = date.toISOString().replace(/\.\d{3}Z$/, '').replace('T', ' ');
     return formatedDate;

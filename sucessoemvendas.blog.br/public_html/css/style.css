@@ -1,13 +1,23 @@
-header{
-    background-image: url();
-    height:300px;
- }
-  .menu{
-    background: white;
-    box-shadow: none;
-  }
-  .brand-logo{
-  }
+
+/* -- Imagem de capa -- */
+.container img {
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
+}
+
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
 
 @media screen and (min-width: 960px){
 header{
@@ -23,23 +33,23 @@ main{
   flex: 1 0 auto;
 }
 
-  .brand-logo{
-    margin-left: 20px;
-  }
-  .desktop{
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  .input-field /*input[type=email].valid*/ {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }
-  /*.input-field input[type=nome].valid {
-    border-bottom: 1px solid #000;
-    box-shadow: 0 1px 0 0 #000;
-  }*/
+.brand-logo{
+  margin-left: 20px;
 }
-  .title{
-    font-size: 16px;
-    text-align: center;
-  }
+.desktop{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=nome].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+}
+.title{
+  font-size: 16px;
+  text-align: center;
+}

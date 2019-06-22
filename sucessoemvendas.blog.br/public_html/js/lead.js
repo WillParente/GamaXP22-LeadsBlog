@@ -19,7 +19,7 @@ const csv = (cb) => {
     leads.on('value', (snapshot) => {
         snapshot.forEach((lead) => {
             var dbValue = lead.val();
-            data.push([ dbValue.email, dbValue.name, dbValue.ipAddress, dbValue.date_hour, dbValue.leadType ]);
+            data.push([ dbValue.email, dbValue.name, dbValue.ipAddress, dbValue.leadType , dbValue.date_hour ]);
         });
         stringify(data,(err, output) => {
             cb(output);
